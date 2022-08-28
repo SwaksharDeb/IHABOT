@@ -284,7 +284,7 @@ algorithm = Stgcn_Lstm(train_x, train_y, valid_x, valid_y, graph.AD, graph.AD2, 
 
 #test_data_loader = Test_Data_Loader("Test_ex5")
 model = algorithm.build_model()
-model.load_weights("best model/best_model_ex5v2.hdf5")
+model.load_weights("best model/best_model_ex5.hdf5")
 
 t = threading.Thread(target=call, args=(game, ))
 t.setDaemon(True)
